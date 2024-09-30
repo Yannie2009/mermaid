@@ -1,0 +1,82 @@
+graph LR
+    subgraph Central Theme
+        id(Identity and Belonging)
+        style id fill:#f0f0f0,stroke:#000000,stroke-width:2px
+    end
+    
+    subgraph Key Characters
+        Simone(Simone: Struggles with cultural identity, navigates Chinese heritage and expectations, seeks love and acceptance, deals with family dynamics and loss.)
+        style Simone fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        Father(Father: Marked by past trauma and loss, driven by family protection and tradition, seeks solace in religion, holds strong political beliefs.)
+        style Father fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        Mother(Mother: Caught between tradition and personal desires, seeks to maintain family stability, grapples with loss and cultural expectations.)
+        style Mother fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        Larry(Larry: Non-Chinese, complex past as a Maoist, seeks love and acceptance, faces opposition from Simone's family.)
+        style Larry fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        Roger(Roger (Ah Di): Deceased brother, his death creates a void and influences family dynamics.)
+        style Roger fill:#f0f0f0,stroke:#000000,stroke-width:2px
+    end
+    
+    subgraph Key Relationships
+        Simone --> Father{Strained: Lack of communication, conflicting views}
+        style Simone->Father stroke:#ff0000,stroke-width:2px
+        Simone --> Mother{Supportive: Understanding, but influenced by tradition}
+        style Simone->Mother stroke:#008000,stroke-width:2px
+        Simone --> Larry{Passionate: Challenged by family and society, seeking acceptance}
+        style Simone->Larry stroke:#0000ff,stroke-width:2px
+        Father --> Mother{Traditional: Complex dynamic, shaped by history and expectations}
+        style Father->Mother stroke:#808080,stroke-width:2px
+        Father --> Roger{Close: Loss intensifies father's protectiveness}
+        style Father->Roger stroke:#008080,stroke-width:2px
+        Father --> Larry{Dislike: Due to Larry's beliefs and heritage}
+        style Father->Larry stroke:#ff0000,stroke-width:2px
+    end
+    
+    subgraph Key Themes
+        CulturalIdentity(Cultural Identity: Simone's struggle with Chinese heritage, family expectations, and societal pressures.)
+        style CulturalIdentity fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        LoveAndRelationships(Love and Relationships: Simone's complex relationship with Larry, navigating family opposition and personal desires.)
+        style LoveAndRelationships fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        FamilyDynamics(Family Dynamics: The profound impact of Roger's death, strained relationships, and unresolved issues.)
+        style FamilyDynamics fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        PoliticalContext(Political and Social Context: The story reflects the political unrest in China and the Victorianas, shaping characters' lives and choices.)
+        style PoliticalContext fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        TraumaAndLoss(Trauma and Loss: Father's experiences in China, Roger's death, and the impact on family and relationships.)
+        style TraumaAndLoss fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        TraditionAndChange(Tradition and Change: The clash between traditional Chinese values and modern realities, shaping family dynamics and individual choices.)
+        style TraditionAndChange fill:#f0f0f0,stroke:#000000,stroke-width:2px
+        ReligionAndFaith(Religion and Faith: Father's search for meaning and solace in religion, providing a framework for his actions.)
+        style ReligionAndFaith fill:#f0f0f0,stroke:#000000,stroke-width:2px
+    end
+    
+    id --> Simone
+    id --> Father
+    id --> Mother
+    id --> Larry
+    id --> Roger
+    
+    Simone --> CulturalIdentity
+    Simone --> LoveAndRelationships
+    Simone --> FamilyDynamics
+    Simone --> PoliticalContext
+    
+    Father --> TraumaAndLoss
+    Father --> FamilyDynamics
+    Father --> PoliticalContext
+    Father --> ReligionAndFaith
+    
+    Mother --> CulturalIdentity
+    Mother --> LoveAndRelationships
+    Mother --> FamilyDynamics
+    Mother --> TraumaAndLoss
+    
+    Larry --> LoveAndRelationships
+    Larry --> PoliticalContext
+    
+    Roger --> FamilyDynamics
+    Roger --> TraumaAndLoss
+    
+    CulturalIdentity --> FamilyDynamics
+    LoveAndRelationships --> PoliticalContext
+    TraumaAndLoss --> FamilyDynamics
+    PoliticalContext --> Individual Choices
